@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Disk Navigator</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="sidebar">
+        <h3>Drives</h3>
+        <div id="drives-list"></div>
+      </div>
+      <div id="main-panel">
+        <div id="breadcrumb"></div>
+        <div id="toolbar">
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search in current folder..."
+          />
+          <button id="btn-home">⌂ Home</button>
+          <button id="btn-copy-path">⎘ Copy Path</button>
+        </div>
+        <div id="file-list"></div>
+        <div id="status-bar"></div>
+      </div>
+    </div>
+    <script src="/__neutralino_globals.js"></script>
+    <script src="/js/neutralino.js"></script>
+    <script src="/js/services/filesystemService.js"></script>
+    <script src="/js/services/osService.js"></script>
+    <script src="/js/services/clipboardService.js"></script>
+    <script src="/js/state/navigatorStore.js"></script>
+    <script src="/js/components/Breadcrumb.js"></script>
+    <script src="/js/components/FileList.js"></script>
+    <script src="/js/components/Sidebar.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
